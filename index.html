@@ -21,7 +21,11 @@
   <body>
     <div class="modal is-hidden" data-modal>
       <div class="modal__box">
-        <button class="modal__btn" data-modal-close type="button"></button>
+        <button class="modal__btn" data-modal-close type="button">
+          <svg class="module__btn--icon">
+            <use href="./images/icons.svg#icon-close-modal"></use>
+          </svg>
+        </button>
       </div>
     </div>
     <header class="header">
@@ -130,19 +134,19 @@
                 width="370"
               />
               <div class="gallery__overlay">
-                <h3 class="gallery__text">десктопні додатки</h3>
+                <p class="gallery__text">десктопні додатки</p>
               </div>
             </li>
             <li class="gallery__item">
               <img class="gallery__img" src="./images/phone.jpg" alt="Смартфон" width="370" />
               <div class="gallery__overlay">
-                <h3 class="gallery__text">мобільні додатки</h3>
+                <p class="gallery__text">мобільні додатки</p>
               </div>
             </li>
             <li class="gallery__item">
               <img class="gallery__img" src="./images/tablet.jpg" alt="Планшет" width="370" />
               <div class="gallery__overlay">
-                <h3 class="gallery__text">дизайнерські рішення</h3>
+                <p class="gallery__text">дизайнерські рішення</p>
               </div>
             </li>
           </ul>
@@ -403,7 +407,7 @@
           </address>
         </div>
         <div class="footer__sosials">
-          <a href="#" class="footer__sosials--title">Приєднуйтесь</a>
+          <p href="#" class="footer__sosials--title">Приєднуйтесь</p>
           <ul class="user__socials">
             <li class="user__soc">
               <a href="https://www.instagram.com" class="user__soc--link footer__soc--link">

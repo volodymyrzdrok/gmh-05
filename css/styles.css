@@ -104,6 +104,9 @@ p {
 .modal__btn {
   cursor: pointer;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -112,7 +115,17 @@ p {
   right: 8px;
   top: 8px;
 }
-.modal__btn::before {
+.module__btn--icon {
+  width: 18px;
+  height: 18px;
+  fill: var(--main-color);
+  transition: fill var(--animation);
+}
+.modal__btn:hover .module__btn--icon {
+  fill: var(--focus-color);
+}
+
+/* .modal__btn::before {
   position: absolute;
   content: '';
   width: 15px;
@@ -129,7 +142,7 @@ p {
   background-color: var(--main-color);
   left: 25%;
   transform: rotateZ(45deg);
-}
+} */
 
 .header {
   border-bottom: #eeeeee 1px solid;
@@ -191,7 +204,7 @@ p {
   height: 4px;
   background-color: var(--focus-color);
   border-radius: 4px;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   transition: background-color var(--animation);
 }
@@ -343,6 +356,7 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  font-weight: 700;
   color: var(--bc-color);
 }
 
