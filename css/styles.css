@@ -84,12 +84,14 @@ p {
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.2);
-
-  transition: opacity var(--animation);
+  transform: scale(1);
+  opacity: 1;
+  transition: opacity var(--animation), transform var(--animation);
 }
 .is-hidden {
   visibility: hidden;
   opacity: 0;
+  transform: scale(0);
 }
 
 .modal__box {
